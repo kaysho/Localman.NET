@@ -15,6 +15,9 @@ pool:
 # just the build configuration is defined, in this case we are building Release packages
 variables:
   buildConfiguration: 'Release'
+  Major: '1'
+  Minor: '0'
+  Patch: '0'
 
 #The build has 3 seperate tasks run under 1 step
 steps:
@@ -45,7 +48,10 @@ steps:
     arguments: '--configuration $(buildConfiguration)'
     packagesToPack: '**/*.csproj'
     nobuild: true
-    versioningScheme: 'off'
+    versioningScheme: byPrereleaseNumber
+    majorVersion: '$(Major)'
+    minorVersion: '$(Minor)'
+    patchVersion: '$(Patch)'
 
 
 

@@ -53,7 +53,7 @@ steps:
 # This will push any .nupkg files to the 'TestFeed' artifact feed
 # allowPackageConflicts allows us to build the same version and not throw an error when trying to push
 # instead it just ingores the latest package unless the version changes
-- task: DotNetCoreCLI@2
+- task: NuGetCommand@2
   displayName: "Nuget push"
   inputs:
     command: 'push'

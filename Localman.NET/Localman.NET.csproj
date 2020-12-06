@@ -3,7 +3,7 @@
   <PropertyGroup>
 	<TargetFramework>netstandard2.0</TargetFramework>
 	<PackageId>Localman.NET</PackageId>
-	<Version>1.0.0</Version>
+	<Version>1.0.1</Version>
 	<Authors>Damilola Shopeyin</Authors>
 	<Description>A .NET library that provides Nigerian based location data list and info such as States and Local Government Areas</Description>
 	<IsPackable>true</IsPackable>

@@ -46,7 +46,7 @@ steps:
   inputs:
     command: 'pack'
     arguments: '--configuration $(buildConfiguration)'
-    packagesToPack: '**/*.csproj'
+    packagesToPack: '**/*.csproj; !**/*.Test.csproj'
     nobuild: true
     versioningScheme: byPrereleaseNumber
     majorVersion: '$(Major)'

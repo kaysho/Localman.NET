@@ -54,9 +54,10 @@ steps:
 # allowPackageConflicts allows us to build the same version and not throw an error when trying to push
 # instead it just ingores the latest package unless the version changes
 - task: DotNetCoreCLI@2
-  displayName: Nuget push
+  displayName: "Nuget push"
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     nuGetFeedType: 'internal'
     publishVstsFeed: '5aa04653-cbc1-4bde-aea9-fdb021b82521/9de413cb-a885-4b32-af44-139de7aa38f8'
+    allowPackageConflicts: true

@@ -10,10 +10,8 @@ A .NET library that provides Nigerian based locations list and info such as Stat
 1. Download the current version through [NuGet](https://www.nuget.org/packages/Localman.NET/) and install it in your .NET project.
 
 ```
-
-
 # How to use
-```
+
 val localman = new Localman()
 
 // get list of all states in Nigeria

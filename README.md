@@ -12,7 +12,7 @@ A .NET library that provides Nigerian based locations list and info such as Stat
 ```
 # How to use
 
-val localman = new Localman()
+val localman = new Localman.NET.Localman()
 
 // get list of all states in Nigeria
 val states = localman.getAllStates() 

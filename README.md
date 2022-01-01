@@ -12,14 +12,14 @@ A .NET library that provides Nigerian based locations list and info such as Stat
 ```
 # How to use
 
-val localman = new Localman.NET.Localman()
+var localman = new Localman.NET.Localman();
 
 // get list of all states in Nigeria
-val states = localman.getAllStates() 
+var states = localman.GetAllStates();
 
 // get list of all local government areas in Lagos State
-val lgasInLagos = localman.getLGAs(States.LAGOS) 
+ var lgasInLagos = localman.GetLGAs(State.LAGOS);
 
 // get latitude of Lagos State
-val latInLagos = localman.getLatitude(States.LAGOS)  
+var latInLagos = localman.GetLatitude(State.LAGOS);
 ```
